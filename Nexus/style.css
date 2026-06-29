@@ -253,3 +253,48 @@ body {
 .field-wrap {
   position: relative;
 }
+.field-input {
+
+    width: 100%;
+
+    padding: 18px 14px 10px;
+
+    background: rgba(255, 255, 255, .04);
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    border-radius: 12px;
+
+    color: white;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color .2s,
+        box-shadow .2s;
+}
+
+.field-label {
+
+    position: absolute;
+
+    left: 14px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #6b7280;
+
+    transition: .25s;
+
+    pointer-events: none;
+}
+
+.field-wrap:focus-within .field-label {
+    top: 10px;
+    font-size: 12px;
+    color: var(--accent);
+}
