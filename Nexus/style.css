@@ -293,8 +293,24 @@ body {
     pointer-events: none;
 }
 
-.field-wrap:focus-within .field-label {
-    top: 10px;
-    font-size: 12px;
-    color: var(--accent);
+.field-wrap:focus-within .field-label{
+
+    top:0;
+
+    transform:translateY(-50%);
+
+    font-size:11px;
+
+    color:#6c63ff;
+
+    background:#0a0b0f;
+
+    padding:0 4px;
+}
+.field-input:focus{
+
+    border-color:#6c63ff;
+
+    box-shadow:0 0 0 4px rgba(108,99,255,.2);
+
 }
